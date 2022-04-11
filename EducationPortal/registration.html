@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <form >
+            <table  bgcolor="grey" cellpadding="10" width="40%">
+                <th  colspan="6"><font size="6">Registration Form</font></th>
+                <tr>
+                   <td><label for="name"><font size="3">UserName </font><font color="red">*</font></label></td>
+                   <td colspan="5"><input type="text" id="name"  name="name" width="15px" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password"><font size="3">Password </font><font color="red">*</font></label></td>
+                    <td colspan="5"><input type="password" id="password"  name="password" required></td>
+                 </tr>
+                 <tr">
+                    <td><label for="cpassword"><font size="3">Confirm Password </font><font color="red">*</font></label></td>
+                    <td colspan="5"><input type="password" id="cpassword"  name="cpassword" required></td>
+                 </tr>
+                <tr>
+                    <td><label for="fname"><font size="3">Father's Name </font></label></td>
+                    <td colspan="5"><input type="text" id="fname" name="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="mname"><font size="3">Mother's Name </font></label></td>
+                    <td  colspan="5"><input type="text" id="mname" name="mname"></td>
+                </tr>
+                <tr>
+                    <td><label for="pnumber"><font size="3">Phone Number </font><font color="red">*</font></label></td>
+                    <td colspan="5"><input type="tel" id="pnumber" name="pnumber" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><font size="3">Email </font><font color="red">*</font></label></td>
+                    <td colspan="5"><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender"><font size="3">Gender</font></label></td>
+                    <td><font size="4">Male</font>
+                        <input type="radio" name="gender" id="gender" value="male" checked="checked"></td>
+                    <td><font size="4">Female</font>
+                        <input type="radio" name="gender" id="gender" value="female"></td>
+                    <td><font size="4">Others</font>
+                        <input type="radio" name="gender" id="gender" value="others">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob"><font size="3">Date of Birth</font></label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="address"><font size="3">Address</font></label></td>
+                    <td colspan="5"><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="bgroup"><font size="3">Blood Group</font></label></td>
+                    <td colspan="5"><select name="bgroup" id="bgroup">
+                        <option value="">Blood Group</option>
+                        <option value="a+">A+</option>
+                        <option value="b+">B+</option>
+                        <option value="a-">A-</option>
+                        <option value="b-">B-</option>
+                        <option value="ab+">AB+</option>
+                        <option value="ab-">AB-</option>
+                        <option value="o+">O+</option>
+                        <option value="o-">O-</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="department"><font size="3">Department</font></label></td>
+                    <td>
+                        <input type="radio" name="department" id="department" value="cse">
+                        <font size="4">CSE</font></td>
+                        <td>   <input type="radio" name="department" id="department" value="eee">
+                        <font size="4">EEE</font></td>
+                        <td>   <input type="radio" name="department" id="department" value="bba">
+                        <font size="4">BBA</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course"><font size="3">Course</font></label></td>
+                    <td>
+                        <input type="checkbox" name="course" id="course" value="c">
+                        <font size="4">C</font></td>
+                        <td>   <input type="checkbox" name="course" id="course" value="c++">
+                        <font size="4">C++</font></td>
+                        <td>   <input type="checkbox" name="course" id="course" value="java">
+                        <font size="4">Java</font></td>
+                        <td>   <input type="checkbox" name="course" id="course" value="ai">
+                        <font size="4">AI</font></td>
+                        <td>  <input type="checkbox" name="course" id="course" value="al">
+                        <font size="4">ML</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="photo"><font size="3">Photo</font></label></td>
+                    <td colspan="5"><input type="file" name="photo" id="photo"></td>
+                </tr>
+                <tr align="center">
+                    <td><input type="submit" value="submit">
+                    <input type="reset" value="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
